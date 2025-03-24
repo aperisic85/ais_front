@@ -7,6 +7,7 @@ pub fn App() -> impl IntoView {
     view! {
         <button
             on:click=move |_| {* set_count.write() += 1}
+            class:red = move || count.get() % 2 == 0
         >
             "Click me: "
             {count}
