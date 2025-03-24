@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head><link rel="modulepreload" href="/ais_front-a5809a1f5d3fea85.js" crossorigin="anonymous" integrity="sha384-LPYuQiTZ8fJi2OSELHlK+X+TVAsRzkFYRAfKZR46305bGHB1a4H2prokldkOsaFC"><link rel="preload" href="/ais_front-a5809a1f5d3fea85_bg.wasm" crossorigin="anonymous" integrity="sha384-TwRweoSUrVpmccMOnR9rdxCozC27cLMMSyhFmc5HwiOxaCcBRI16C0mp86pRWXSS" as="fetch" type="application/wasm"></head>
+  <head><link rel="modulepreload" href="/ais_front-ff509dac8694e451.js" crossorigin="anonymous" integrity="sha384-r0tjsFO2oxGubZ+Kw5BXlLmNWym6VD2VBZq96CfgX4AeuARyQkio6WgBKuJ2JjTO"><link rel="preload" href="/ais_front-ff509dac8694e451_bg.wasm" crossorigin="anonymous" integrity="sha384-l8pQaTQTK6IYQQWVeYD7jz9d1Hq32CjbmRvK4rVYstNy7C9EEGtNoao/b+Hmj2xN" as="fetch" type="application/wasm"></head>
   <body>
 <script type="module">
-import init, * as bindings from '/ais_front-a5809a1f5d3fea85.js';
-const wasm = await init({ module_or_path: '/ais_front-a5809a1f5d3fea85_bg.wasm' });
+import init, * as bindings from '/ais_front-ff509dac8694e451.js';
+const wasm = await init({ module_or_path: '/ais_front-ff509dac8694e451_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -146,5 +146,16 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 <style>
   .red {
     color: red;
+  }
+  .button-20 {
+    width: 20px;
+    height: 20px;
+  }
+  .button-40 {
+    width: 40px;
+    height: 40px;
+  }
+  .rounded {
+    border-radius: 50px;
   }
 </style>

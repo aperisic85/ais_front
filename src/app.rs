@@ -7,7 +7,8 @@ pub fn App() -> impl IntoView {
     view! {
         <button
             on:click=move |_| {* set_count.write() += 1}
-            class:red = move || count.get() % 2 == 0
+            //class:red = move || count.get() % 2 == 0 //change color on odd
+            class=(["button-40", "rounded"], move || count.get() % 2 == 1)
         >
             "Click me: "
             {count}
