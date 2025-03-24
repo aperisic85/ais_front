@@ -5,6 +5,7 @@ use crate::components::progressbar::ProgressBar;
 pub fn App() -> impl IntoView {
     let (count, set_count) = signal(0);
     let double_count = move || count.get() * 2;
+    let plus_one = move || count.get() + 1;
     view! {
         <button
             on:click=move |_| {* set_count.write() += 1}
@@ -20,6 +21,6 @@ pub fn App() -> impl IntoView {
         </p>
         
         
-        <ProgressBar progress=count/>
+        <ProgressBar progress=count max=80/>
     }
 }
